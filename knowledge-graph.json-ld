@@ -1,0 +1,186 @@
+{
+  "@context": {
+    "@vocab": "http://schema.org/",
+    "repo": "http://schema.org/SoftwareSourceCode",
+    "language": "http://schema.org/programmingLanguage",
+    "topic": "http://schema.org/about",
+    "industry": "http://schema.org/applicationCategory",
+    "relatedTo": {
+      "@id": "http://schema.org/isRelatedTo",
+      "@type": "@id"
+    },
+    "similarTo": {
+      "@id": "http://schema.org/isSimilarTo",
+      "@type": "@id"
+    },
+    "creator": "http://schema.org/creator",
+    "dateCreated": "http://schema.org/dateCreated",
+    "dateModified": "http://schema.org/dateModified",
+    "description": "http://schema.org/description",
+    "name": "http://schema.org/name",
+    "url": "http://schema.org/url",
+    "starCount": "http://schema.org/interactionCount"
+  },
+  "@graph": [
+    {
+      "@type": "repo",
+      "@id": "repo:solana-labs/solana",
+      "name": "solana-labs/solana",
+      "description": "Web-Scale Blockchain for fast, secure, scalable, decentralized apps and marketplaces.",
+      "url": "https://github.com/solana-labs/solana",
+      "language": "Rust",
+      "dateCreated": "2017-12-20T01:12:17Z",
+      "dateModified": "2025-03-06T15:45:30Z",
+      "starCount": 10200,
+      "topics": ["blockchain", "crypto", "web3", "defi", "solana"],
+      "creator": {
+        "@type": "Person",
+        "name": "solana-labs"
+      }
+    },
+    {
+      "@type": "repo",
+      "@id": "repo:paritytech/substrate",
+      "name": "paritytech/substrate",
+      "description": "Substrate: The platform for blockchain innovators",
+      "url": "https://github.com/paritytech/substrate",
+      "language": "Rust",
+      "dateCreated": "2018-01-15T08:24:35Z",
+      "dateModified": "2025-03-05T12:30:45Z",
+      "starCount": 7500,
+      "topics": ["blockchain", "crypto", "web3", "substrate", "polkadot"],
+      "creator": {
+        "@type": "Person",
+        "name": "paritytech"
+      }
+    },
+    {
+      "@type": "repo",
+      "@id": "repo:rust-lang/rust",
+      "name": "rust-lang/rust",
+      "description": "Empowering everyone to build reliable and efficient software.",
+      "url": "https://github.com/rust-lang/rust",
+      "language": "Rust",
+      "dateCreated": "2010-06-16T20:39:03Z",
+      "dateModified": "2025-03-07T09:15:22Z",
+      "starCount": 85000,
+      "topics": ["programming-language", "systems-programming", "rust"],
+      "creator": {
+        "@type": "Person",
+        "name": "rust-lang"
+      }
+    },
+    {
+      "@type": "repo",
+      "@id": "repo:microsoft/TypeScript",
+      "name": "microsoft/TypeScript",
+      "description": "TypeScript is a superset of JavaScript that compiles to clean JavaScript output.",
+      "url": "https://github.com/microsoft/TypeScript",
+      "language": "TypeScript",
+      "dateCreated": "2012-07-12T04:47:23Z",
+      "dateModified": "2025-03-06T18:20:10Z",
+      "starCount": 92000,
+      "topics": ["programming-language", "javascript", "typescript", "web-development"],
+      "creator": {
+        "@type": "Person",
+        "name": "microsoft"
+      }
+    },
+    {
+      "@type": "repo",
+      "@id": "repo:vercel/next.js",
+      "name": "vercel/next.js",
+      "description": "The React Framework for Production",
+      "url": "https://github.com/vercel/next.js",
+      "language": "TypeScript",
+      "dateCreated": "2016-10-05T23:32:51Z",
+      "dateModified": "2025-03-07T10:45:30Z",
+      "starCount": 105000,
+      "topics": ["react", "framework", "javascript", "typescript", "web-development"],
+      "creator": {
+        "@type": "Person",
+        "name": "vercel"
+      }
+    },
+    {
+      "@type": "relatedTo",
+      "@id": "relationship:language:solana-labs/solana:paritytech/substrate",
+      "subject": "repo:solana-labs/solana",
+      "object": "repo:paritytech/substrate",
+      "relationshipType": "shared_language",
+      "language": "Rust"
+    },
+    {
+      "@type": "relatedTo",
+      "@id": "relationship:language:solana-labs/solana:rust-lang/rust",
+      "subject": "repo:solana-labs/solana",
+      "object": "repo:rust-lang/rust",
+      "relationshipType": "shared_language",
+      "language": "Rust"
+    },
+    {
+      "@type": "relatedTo",
+      "@id": "relationship:language:paritytech/substrate:rust-lang/rust",
+      "subject": "repo:paritytech/substrate",
+      "object": "repo:rust-lang/rust",
+      "relationshipType": "shared_language",
+      "language": "Rust"
+    },
+    {
+      "@type": "relatedTo",
+      "@id": "relationship:language:microsoft/TypeScript:vercel/next.js",
+      "subject": "repo:microsoft/TypeScript",
+      "object": "repo:vercel/next.js",
+      "relationshipType": "shared_language",
+      "language": "TypeScript"
+    },
+    {
+      "@type": "relatedTo",
+      "@id": "relationship:topic:solana-labs/solana:paritytech/substrate:blockchain",
+      "subject": "repo:solana-labs/solana",
+      "object": "repo:paritytech/substrate",
+      "relationshipType": "shared_topic",
+      "topic": "blockchain"
+    },
+    {
+      "@type": "relatedTo",
+      "@id": "relationship:topic:solana-labs/solana:paritytech/substrate:crypto",
+      "subject": "repo:solana-labs/solana",
+      "object": "repo:paritytech/substrate",
+      "relationshipType": "shared_topic",
+      "topic": "crypto"
+    },
+    {
+      "@type": "relatedTo",
+      "@id": "relationship:topic:solana-labs/solana:paritytech/substrate:web3",
+      "subject": "repo:solana-labs/solana",
+      "object": "repo:paritytech/substrate",
+      "relationshipType": "shared_topic",
+      "topic": "web3"
+    },
+    {
+      "@type": "relatedTo",
+      "@id": "relationship:topic:microsoft/TypeScript:vercel/next.js:typescript",
+      "subject": "repo:microsoft/TypeScript",
+      "object": "repo:vercel/next.js",
+      "relationshipType": "shared_topic",
+      "topic": "typescript"
+    },
+    {
+      "@type": "similarTo",
+      "@id": "relationship:similar:solana-labs/solana:paritytech/substrate",
+      "subject": "repo:solana-labs/solana",
+      "object": "repo:paritytech/substrate",
+      "similarityScore": 0.75,
+      "sharedTopics": ["blockchain", "crypto", "web3"]
+    },
+    {
+      "@type": "similarTo",
+      "@id": "relationship:similar:microsoft/TypeScript:vercel/next.js",
+      "subject": "repo:microsoft/TypeScript",
+      "object": "repo:vercel/next.js",
+      "similarityScore": 0.40,
+      "sharedTopics": ["typescript", "javascript", "web-development"]
+    }
+  ]
+}

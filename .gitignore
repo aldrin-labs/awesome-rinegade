@@ -1,0 +1,27 @@
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# Environment variables
+.env
+
+# Temporary data files
+starred_repos.json
+repo_metadata.json
+
+# IDE files
+.idea/
+.vscode/
+*.swp
+*.swo
